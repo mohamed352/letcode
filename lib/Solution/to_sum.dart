@@ -19,7 +19,8 @@ class ToSumSolution {
     if (numbers != null && target != null && numbers.isNotEmpty) {
       // Iterate through each number in the input list
       for (int i = 0; i < numbers.length; i++) {
-        int complement = target - numbers[i]; // Calculate the complement of the current number
+        int complement = target -
+            numbers[i]; // Calculate the complement of the current number
 
         // Log the current number and complement
         print('Current number: ${numbers[i]}, complement: $complement');
@@ -46,3 +47,19 @@ class ToSumSolution {
     return index; // Return the list of indices
   }
 }
+
+
+/*
+Solution Trace 
+[1,5,6,3] t=9
+{}
+ target - value[i] = 8
+ {1,0}
+ target - value [i] = 4
+ {1,0,5,1}
+ target - value [i] = 3
+ {1,0,5,1,6,2}
+ target - value [i] = 6
+ end return [2,3]
+ {1,0,5,1,6,2}
+*/
