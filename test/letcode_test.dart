@@ -12,13 +12,15 @@ void main() {
   ///
   /// The test case checks whether the function returns the expected result for a given input.
   test('toSum', () {
-    /// The expected result for the given input.
     final expectedResult = to_sum_input.ToSum.result;
-    
+
     /// Call the [toSum] function with the given input and check whether the result matches the expected result.
     expect(
         letcode.LetcodeImpl()
             .toSum(to_sum_input.ToSum.input, to_sum_input.ToSum.target),
         expectedResult);
+  });
+  test('isPalindrome', () {
+    expect(letcode.LetcodeImpl().isPalindrome(121), true);
   });
 }

@@ -1,4 +1,4 @@
-import 'package:letcode/Solution/to_sum.dart';
+import 'package:letcode/Solution/solutions.dart';
 import 'package:letcode/letcode.dart';
 
 /// The implementation of the LetCode interface.
@@ -8,7 +8,7 @@ import 'package:letcode/letcode.dart';
 class LetcodeImpl implements LetCode {
   /// The instance of the ToSumSolution class that will be used for solving the
   /// toSum problem.
-  final ToSumSolution _toSum = ToSumSolution();
+  final Solutions _solutions = Solutions();
 
   /// Delegates the toSum problem to the ToSumSolution class.
   ///
@@ -20,6 +20,21 @@ class LetcodeImpl implements LetCode {
   /// sum.
   @override
   List<int> toSum(List<int> numbers, int target) {
-    return _toSum.toSumOptimal(numbers, target);
+    return _solutions.toSum.toSumOptimal(numbers, target);
+  }
+
+  @override
+
+  /// Checks if the given integer [x] is a palindrome.
+  ///
+  /// Delegates the problem to the PalindromeSolution class.
+  ///
+  /// The [x] parameter is the integer to be checked.
+  /// The method returns a boolean value indicating whether [x] is a palindrome.
+  @override
+  bool isPalindrome(int x) {
+    // Delegate the problem to the PalindromeSolution class.
+    // It will check if [x] is a palindrome.
+    return _solutions.palindrome.isPalindromeOptimal(x);
   }
 }
