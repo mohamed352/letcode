@@ -23,4 +23,7 @@ void main() {
   test('isPalindrome', () {
     expect(letcode.LetcodeImpl().isPalindrome(121), true);
   });
+  test('romanToInt', () {
+    expect(letcode.LetcodeImpl().romanToInt('III'), 3);
+  });
 }

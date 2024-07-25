@@ -1,4 +1,4 @@
-import 'package:letcode/Solution/solutions.dart';
+import 'package:letcode/_solution/solutions.dart';
 import 'package:letcode/letcode.dart';
 
 /// The implementation of the LetCode interface.
@@ -36,5 +36,20 @@ class LetcodeImpl implements LetCode {
     // Delegate the problem to the PalindromeSolution class.
     // It will check if [x] is a palindrome.
     return _solutions.palindrome.isPalindromeOptimal(x);
+  }
+
+  @override
+
+  /// Converts a Roman numeral string [s] to an integer.
+  ///
+  /// Delegates the problem to the RomanToIntSolution class.
+  ///
+  /// The [s] parameter is the Roman numeral string to be converted.
+  /// The method returns an integer that represents the value of the Roman numeral string.
+  @override
+  int romanToInt(String s) {
+    // Delegate the problem to the RomanToIntSolution class.
+    // It will convert the Roman numeral string [s] to an integer.
+    return _solutions.romanToInt.romanToIntOptimal(s);
   }
 }
