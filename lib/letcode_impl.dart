@@ -52,4 +52,20 @@ class LetcodeImpl implements LetCode {
     // It will convert the Roman numeral string [s] to an integer.
     return _solutions.romanToInt.romanToIntOptimal(s);
   }
+
+  @override
+
+  /// Finds the longest common prefix among a list of strings [str].
+  ///
+  /// Delegates the problem to the LongestCommonPrefixSolution class.
+  ///
+  /// The [str] parameter is the list of strings to find the common prefix for.
+  /// The method returns a string that is the longest common prefix among the
+  /// strings in [str].
+  @override
+  String longestCommonPrefix(List<String> str) {
+    // Delegate the problem to the LongestCommonPrefixSolution class.
+    // It will find the longest common prefix among the strings in [str].
+    return _solutions.longestCommonPrefix.longestCommonPrefix(str);
+  }
 }

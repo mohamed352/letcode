@@ -1,3 +1,4 @@
+import 'package:letcode/problems/longest_common_prefix.dart';
 import 'package:test/test.dart';
 import 'package:letcode/letcode_impl.dart' as letcode;
 
@@ -25,5 +26,11 @@ void main() {
   });
   test('romanToInt', () {
     expect(letcode.LetcodeImpl().romanToInt('III'), 3);
+  });
+  test('longestCommonPrefix', () {
+    expect(
+        letcode.LetcodeImpl()
+            .longestCommonPrefix(LongestCommonPrefixProblem.input),
+        LongestCommonPrefixProblem.result);
   });
 }
